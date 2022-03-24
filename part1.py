@@ -1,6 +1,6 @@
 import turtle
 
-t = turtle.getturtle()
+t = turtle.Turtle()
 t.forward(100)
 t.left(90)
 t.forward(100)
@@ -26,5 +26,17 @@ t.home()
 t.clear()
 t.circle(100, steps=3) #triangle
 t.dot(25)
+t.penup()
 t.fd(100)
+t.pendown()
 t.dot(25)
+t.penup()
+t.rt(90)
+t.fd(100)
+t.left(90)
+t.fd(50)
+t.left(180)
+t.pendown()
+t.fd(200)
+
+turtle.getscreen()._root.mainloop()
