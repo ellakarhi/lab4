@@ -1,4 +1,5 @@
 import turtle
+turtle.screensize(1000)
 t = turtle.Turtle()
 
 def bigline(x, y):
@@ -20,13 +21,14 @@ def shortbox_set():
   t.fd(27)
   t.rt(90)
 
-def l_setup():
+def l_setup(x):
   t.lt(180)
   t.penup()
-  t.fd(80)
+  t.fd(x)
   t.pendown()
   t.rt(90)
 
+#To make the E
 t.lt(90)
 bigline(100, 20)
 t.lt(180)
@@ -37,9 +39,26 @@ shortbox(40, 15)
 shortbox_set()
 shortbox(40, 15)
 
-l_setup()
-
+#To make the Ls
+l_setup(80)
 bigline(100, 20)
+t.lt(180)
+l_setup(40)
+bigline(100,20)
 
+#to make the A
+t.penup()
+t.fd(20)
+t.rt(90)
+t.fd(70)
+t.pendown()
+t.circle(30)
+t.penup()
+t.fd(20)
+t.lt(90)
+t.fd(30)
+t.pendown()
+t.circle(20)
+t.fd(30)
 
 turtle.getscreen()._root.mainloop()
