@@ -25,3 +25,4 @@ def draw_box(t: turtle):
   for i in range (4):
     t.fd(400)
     t.left(90)
+

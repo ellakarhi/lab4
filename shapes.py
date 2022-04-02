@@ -21,7 +21,6 @@ def draw_rows(x, y):
     x-=400
     y+=100
 
-
 def draw_box():
   t.penup()
   t.goto(-100, -100)
